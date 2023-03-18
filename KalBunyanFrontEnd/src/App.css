@@ -1,0 +1,549 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap');
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Tajawal', sans-serif;
+  background-color: #E8E2DF;
+  direction:rtl;
+}
+
+/*-------------------------------NAV-------------------------------*/
+nav {
+  background-color: #E8E2DF;
+  height: 110px;
+}
+.mainNav {
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+  background-color: #e8e2dff6;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+  height: 110px; 
+  position: fixed;
+  top: 0;
+  left: 0px;
+  right: 0px;
+  z-index: 1;
+}
+.navBar {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.navBar img {
+  width: 120px;
+  margin-right: 60px;
+  cursor: pointer;
+}
+.navBar a {
+  text-decoration: none;
+  color: #7c8b7a;
+  font-size: 20px;
+  font-weight: 900;
+}
+.navBar ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+.navBar a:hover  {
+  border-bottom: 2px solid #E6AE97 ;
+}
+.navBar li .active  {
+  border-bottom: 2px solid #E6AE97 ;
+}
+
+/*----------login & singup btn & profile----------*/
+.btnNav {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  gap: 20px;
+  margin-left: 60px;
+}
+.btnNav button{
+  font-family: 'Tajawal', sans-serif;
+  padding: 7px 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  gap:8px;
+  color: white;
+  font-size: 18px;
+  background-color: #ABBEA9;
+}
+.btnNav button:hover {
+  background-color: #103d3f;
+}
+.btnNav p{
+  margin: 0;
+  cursor: pointer;
+  font-size: 22px;
+  color: #103d3f;
+}
+.btnNav p:hover{
+  color: #7c8b7a;
+}
+
+/*-------------------------------FOOTER-------------------------------*/
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #ABBEA9;
+  height: 70px;
+}
+footer p {
+  font-size: 14px;
+  color: #D38E72;
+  background-color: rgba(255, 255, 255, 0.303);
+  border-radius: 20px;
+  padding: 5px;
+}
+footer a {
+  text-decoration: none;
+  color: white;  
+}
+footer ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+footer li {  
+  padding: 8px 9px 1px 9px;
+  background-color: #E6AE97;
+  border-radius: 50%;
+}
+footer li:hover {  
+  background-color: rgba(255, 255, 255, 0.303);
+}
+
+/*-------------------------------HOME-------------------------------*/
+/*----------header----------*/
+.headerContainer {
+  height: 80vh;
+}
+.headerBg {
+  height: 90%;
+  background-image: url('./assets/bg_header.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.headerContentContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  margin: 90px 130px;
+}
+.headerContentContainer img {
+  height: 380px;
+}
+.headerContent {
+  font-size: 45px;
+  color: #103D3F;
+  font-weight:900;
+}
+.headerContent button {
+  padding: 12px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 15px;
+  font-weight: 900;
+  background-color: #103d3f;
+  color: white;
+}
+.headerContent button:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #103D3F;
+}
+
+/*----------plan section----------*/
+.palnSection h1 {
+  font-size: 45px;
+  color: #103D3F;
+  font-weight:900;
+  margin: 10px 10px 10px 300px;
+  direction: ltr;
+}
+.palnSection img {
+  height: 60%;
+  width: 100%;
+}
+
+/*----------vision section----------*/
+.visionSection {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 130px 80px 0px;
+}
+.visionSection h1 {
+  font-size: 45px;
+  color: #103D3F;
+  font-weight:900;
+  margin-right: 30px;
+}
+.visionSection p {
+  font-size: 20px;
+  color: #103D3F;
+  font-weight:900;
+  background-color: white;
+  border-radius: 25px;
+  border-top: 4px solid #E6AE97;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25);
+  padding: 45px;
+}
+.visionSection img {
+  width: 50%;
+  height: 50%;
+}
+
+/*----------whyUs section----------*/
+.whyUsSection h1 {
+  font-size: 45px;
+  color: #103D3F;
+  font-weight:900;
+  margin: 10px 10px 10px 300px;
+  direction: ltr;
+}
+.whyUsSection img {
+  width: 100%;
+}
+
+/*----------newsletter section----------*/
+.newsletterBg {
+  background-image: url('./assets/newsletter.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 40vh;
+}
+.newsletterContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-top: 170px;
+}
+.newsletterContent h3 {
+  font-size: 30px;
+  color: #103D3F;
+  font-weight:900;
+}
+.newsletterContent button {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  background-color: #103d3f;
+  color: white;
+}
+.newsletterContent button:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #103D3F;
+}
+.newsletterContent input {
+  text-align: center;
+  padding: 14px 100px;
+  border-radius: 8px;
+  border: none;
+}
+.newsletterContent input:focus {
+  outline: 1px dotted #103d3fd2;
+}
+
+/*-------------------------------SESSIONS-------------------------------*/
+.sessionsContainer{
+  background-color: #E8E2DF;
+  font-family: 'Tajawal', sans-serif;
+  padding: 5%;
+}
+.headerSessions{
+  height: 20vh;
+  text-align: left;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 45px;
+  color: #103D3F;
+  padding: 0px 150px 50px 150px;
+}
+.lineSessions {
+  border-bottom: 2px solid #E6AE97 ;
+}
+
+
+
+/*---------------------------------------------------------------------------------*/
+/*-----------------------------------RESPONSIVE------------------------------------*/
+
+/*-------------------------------------------------------------------------1024px*/
+@media only screen and (max-width: 1024px) {
+  /*-------------------------------HOME-------------------------------*/
+  /*----------header----------*/
+  .headerContentContainer {
+    margin: 90px 100px;
+  }
+  .headerContentContainer img {
+    height: 300px;
+  }
+  .headerContent {
+    font-size: 30px;
+  }
+  .headerContent button {
+    padding: 10px 24px;
+    font-size: 18px;
+  }
+  /*-------------------------------SESSIONS-------------------------------*/
+  
+  .headerSessions{
+    height: 20vh;
+    font-size: 40px;
+    padding: 25px 100px 50px 100px;
+  }
+}
+
+/*-------------------------------------------------------------------------768px*/
+@media only screen and (max-width: 768px) {
+  /*-------------------------------NAV-------------------------------*/
+  nav {
+    height:75px;
+  }
+  .mainNav {
+    height: 75px; 
+  }
+  .navBar img {
+    width: 80px;
+  }
+  .navBar a {
+    font-size: 18px;
+  }
+  /*----------login & singup btn & profile----------*/
+  .btnNav {
+    display: flex;
+    gap: 10px;
+    margin-right: 10px;
+  }
+  .btnNav button{
+    padding: 5px 15px;
+    font-size: 10px;
+  }
+  .btnNav p{
+    font-size: 16px;
+  }
+  /*-------------------------------FOOTER-------------------------------*/
+  footer {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    height: 100px;
+  }
+  footer p {
+    font-size: 12px;
+  }
+  footer ul{
+    padding: 0px;
+  }
+  footer li {  
+    padding: 5px 6px 1px 6px;
+  }
+  /*-------------------------------HOME--------------------------------*/
+  /*----------header----------*/
+  .headerContentContainer {
+    margin: 90px 60px;
+  }
+  .headerContentContainer img {
+    height: 250px;
+  }
+  .headerContent {
+    font-size: 23px;
+  }
+  .headerContent button {
+    padding: 10px 24px;
+    font-size: 15px;
+  }
+  /*----------plan section----------*/
+  .palnSection h1 {
+    font-size: 35px;
+    margin: 10px 10px 10px 200px;
+  }
+  /*----------vision section----------*/
+  .visionSection h1 {
+    font-size: 35px;
+  }
+  .visionSection p {
+    font-size: 15px;
+  }
+  /*----------whyUs section----------*/
+  .whyUsSection h1 {
+    font-size: 35px;
+    margin: 10px 10px 10px 200px;
+  }
+  /*----------newsletter section----------*/
+  .newsletterBg {
+    background-position: right;
+    height: 30vh;
+  }
+  .newsletterContent {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+    padding: 120px 0px 0px 20px;
+
+  }
+  .newsletterContent h3 {
+    font-size: 18px;
+  }
+  .newsletterContent button {
+    padding: 8px 20px;
+    font-size: 15px;
+  }
+  .newsletterContent input {
+    padding: 10px 60px;
+  }
+  /*-------------------------------SESSIONS-------------------------------*/
+  .headerSessions{
+    font-size: 28px;
+    padding: 25px 100px 50px 100px;
+  }
+}
+
+/*-------------------------------------------------------------------------425px*/
+@media only screen and (max-width: 425px) {
+  /*-------------------------------NAV-------------------------------*/
+  nav {
+    height:75px; 
+  }
+  .mainNav {
+    height: 75px; 
+  }
+  .navBar {
+    gap: 0px;
+  }
+  .navBar img {
+    width: 60px;
+    margin-right: 20px;
+  }
+  .navBar a {
+    font-size: 12px;
+  }
+  .navBar ul {
+    gap: 20px;
+    padding-right: 10px;
+  }
+  /*----------login & singup btn & profile----------*/
+  .btnNav {
+    margin-right: 10px;
+  }
+  .btnNav button{
+    padding: 4px 13px;
+    font-size: 8px;
+  }
+  .btnNav p{
+    font-size: 12px;
+  }
+  /*-------------------------------FOOTER-------------------------------*/
+  footer {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    height: 100px;
+  }
+  footer p {
+    font-size: 8px;
+  }
+  footer ul{
+    padding: 0px;
+  }
+  footer li {  
+    padding: 5px 6px 1px 6px;
+  }
+  /*-------------------------------HOME--------------------------------*/
+  /*----------header----------*/
+  .headerContainer {
+    height: 70vh;
+  }
+  .headerContentContainer {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    margin: 100px 30px;
+  }
+  .headerContentContainer img {
+    height: 190px;
+  }
+  .headerContent {
+    text-align: center;
+    font-size: 18px;
+  }
+  .headerContent button {
+    padding: 8px 20px;
+    font-size: 10px;
+  }
+  /*----------plan section----------*/
+  .palnSection h1 {
+    font-size: 20px;
+    margin: 10px 10px 10px 40px;
+  }
+  /*----------vision section----------*/
+  .visionSection {
+    margin: 80px 30px 80px 0px;
+  }
+  .visionSection h1 {
+    font-size: 20px;
+  }
+  .visionSection p {
+    font-size: 8px;
+    padding: 20px;
+  }
+  .visionSection img {
+    width: 40%;
+    height: 40%;
+  }
+  /*----------whyUs section----------*/
+  .whyUsSection h1 {
+    font-size: 20px;
+    margin: 10px 10px 10px 40px;
+  }
+  /*----------newsletter section----------*/
+  .newsletterBg {
+    background-position: center;
+    height: 40vh;
+  }
+  .newsletterContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    gap: 5px;
+    padding-top: 140px;
+  }
+  .newsletterContent h3 {
+    font-size: 12px;
+  }
+  .newsletterContent button {
+    padding: 8px 20px;
+    font-size: 8px;
+  }
+  .newsletterContent input {
+    padding: 5px 6px;
+  }
+  /*-------------------------------SESSIONS-------------------------------*/
+  .sessionsContainer{
+  padding: 5%;
+  }
+  .headerSessions{
+    height: 20vh;
+    font-size: 25px;
+    padding: 10px 10px 10px 10px;
+  }
+}
+  
